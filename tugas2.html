@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challange Form HTML</title>
+
+    <link rel="stylesheet" href="form.css">
+</head>
+
+<body>
+    <form action="#">
+        <fieldset>
+            <legend>Buat Akun Baru</legend>
+            
+            <label for="nama" class="block">Nama</label>
+            <input type="text" name="nama" id="nama" placeholder="Nama Lengkap" required>
+            
+            <label for="password" class="block">Password</label>
+            <input type="password" name="password" id="password" minlength="8" placeholder="Minimal 8 Karakter" required>
+
+            <label for="email" class="block">Email</label>
+            <input type="email" name="email" id="email" placeholder="nama@email.com" required>
+            
+            <label for="kota" class="block">Kota</label>
+            <select name="kota" id="kota">
+                <option value="" disabled selected>Kota asal anda</option>
+                <option value="aceh">Aceh</option>
+                <option value="medan">Medan</option>
+                <option value="padang">Padang</option>
+                <option value="pekanbaru">Pekanbaru</option>
+            </select>
+
+            <p class="block">Jenis Kelamin</p>
+            <input type="radio" name="jenis_kelamin" id="jenis_kelamin_pria" value="pria" required>
+            <label for="jenis_kelamin_pria">Pria</label>
+
+            <br>
+
+            <input type="radio" name="jenis_kelamin" id="jenis_kelamin_wanita" value="wanita">
+            <label for="jenis_kelamin_wanita">Wanita</label>
+            
+            <br>
+
+            <label for="bio" class="block">Bio (Opsional)</label>
+            <textarea name="bio" id="bio" placeholder="Cerita Singkat Tentang Diri Anda"></textarea>
+
+            <p class="block">Topik yang diminati (Opsional)</p>
+            <ol>
+                <li>
+                    <input type="checkbox" name="informasi_disukai" id="olahraga" value="olahraga">
+                    <label for="olahraga">Olahraga</label>
+                </li>
+                <li>
+                    <input type="checkbox" name="informasi_disukai" id="traveling" value="traveling">
+                    <label for="traveling">Traveling</label>
+                </li>
+                <li>
+                    <input type="checkbox" name="informasi_disukai" id="teknologi" value="teknologi">
+                    <label for="teknologi">Teknologi</label>
+                </li>
+                <li>
+                    <input type="checkbox" name="informasi_disukai" id="kesehatan" value="kesehatan">
+                    <label for="kesehatan">Kesehatan</label>
+                </li>
+            </ol>
+
+            <input type="submit" >
+        </fieldset>
+
+    </form>
+</body>
+
+</html>
