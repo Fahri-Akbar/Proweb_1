@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas Bootstrap</title>
+
+    <link rel="stylesheet" href="../css/bootstrap.css">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+    </style>
+
+</head>
+
+<body>
+    <section class="vh-100 d-flex flex-column">
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg bg-body-light shadow-sm">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="img/icon.png" width="100" alt="">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+
+                        <!-- Dropdown Tutorial -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Tutorial
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">HTML</a></li>
+                                <li><a class="dropdown-item" href="#">CSS</a></li>
+                                <li><a class="dropdown-item" href="#">Javascript</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">PHP</a></li>
+                                <li><a class="dropdown-item" href="#">MySQL</a></li>
+                            </ul>
+                        </li>
+
+                        <!-- Dropdown Tugas -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Tugas Lainnya
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Tugas 1</a></li>
+                                <li><a class="dropdown-item" href="#">Tugas 2</a></li>
+                                <li><a class="dropdown-item" href="#">Tugas 3</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Profil</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Hubungi</a>
+                        </li>
+
+                        <!-- <li class="nav-item">
+                            <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                        </li> -->
+                    </ul>
+                    <div class="d-flex flex-column flex-md-row">
+                        <button
+                            class="btn px-3 btn-outline-success d-sm-block w-100 w-md-25 d-md-inline mb-2 mb-md-0 me-md-2"
+                            type="button">Daftar</button>
+                        <button class="btn px-3 btn-primary d-sm-block w-100 w-md-auto d-md-inline"
+                            type="button">Masuk</button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Main Content -->
+        <div class="container flex-grow-1">
+            <div class="row h-100">
+                <div class="col align-self-center">
+                    <h1 style="font-family: 'Lobster';">Hai! <br> Selamat datang di proweb</h1>
+                    <p class="mt-3 mb-4">
+                        Belajar pemrograman web mulai dari HTML, CSS, Javascript, PHP dan MySQL
+                    </p>
+                    <a href="" class="btn btn-outline-success">Mulai Belajar</a>
+                </div>
+                <div class="col align-self-center d-none d-md-block d-xl-block">
+                    <img src="img/hero.jpg" width="600" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="../js/bootstrap.bundle.js"></script>
+</body>
+
+</html>
